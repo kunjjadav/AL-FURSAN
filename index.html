@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Fursan Contracting — Civil & MEP Contractors, Dubai</title>
+    <meta name="description" content="Al Fursan Contracting delivers high-quality civil and MEP contracting services across Dubai. On time. On budget. Built to last." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                navy: '#071023',
+                gold: '#C9A34A',
+                ivory: '#F6F3F0',
+                charcoal: '#1F2937',
+                gray: '#6B7280',
+                success: '#1E8A3B',
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            container: {
+              center: true,
+              padding: '1rem',
+            }
+          }
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Al Fursan Contracting",
+      "url": "https://alfursancont.com",
+      "telephone": ["+971566647666", "+971524852148"],
+      "email": "info@alfursancont.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office No.G-03 & G-04, Ground Floor, Al Diyafa Building 188, Mankhool Road, Al Hudaiba",
+        "addressLocality": "Bur Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "74447",
+        "addressCountry": "AE"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "22"
+      }
+    }
+    </script>
+    <style>
+      /* Custom scrollbar for premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #071023; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C9A34A; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b08d3b; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-ivory text-brand-charcoal font-sans antialiased">
+    <!-- Hidden form for Netlify detection -->
+    <!-- Note: honeypot removed to avoid complex state handling, standard netlify protection applies -->
+    <form name="contact" netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="type" />
+      <textarea name="message"></textarea>
+      <input type="hidden" name="form-name" value="contact" />
+    </form>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
