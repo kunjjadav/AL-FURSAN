@@ -3,8 +3,7 @@ import { Project, Service, Testimonial } from './types';
 export const COMPANY_INFO = {
   name: "Al Fursan Contracting",
   email: "info@alfursancont.com",
-  phonePrimary: "+971 56 664 7666",
-  phoneSecondary: "+971 52 485 2148",
+  phonePrimary: "+971 52 485 2148",
   address: "Office No.G-03 & G-04, Al Diyafa Building 188, Bur Dubai, UAE",
   tagline: "Precision Civil & MEP Contracting, Dubai",
 };

@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer className="bg-brand-navy text-white pt-20 pb-10 border-t border-brand-gold/20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-start">
-          
+
           {/* Brand */}
           <div className="space-y-6">
             <div>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <h3 className="font-serif text-lg font-semibold mb-6 text-brand-gold">{t.footer.services}</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               {t.data.services.map((service) => (
-                 <li key={service.id}><Link to="/services" className="hover:text-white transition-colors">{service.title}</Link></li>
+                <li key={service.id}><Link to="/services" className="hover:text-white transition-colors">{service.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -66,10 +66,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-brand-gold shrink-0" size={16} />
-                <div className="flex flex-col">
-                  <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="hover:text-white" dir="ltr">{COMPANY_INFO.phonePrimary}</a>
-                  <a href={`tel:${COMPANY_INFO.phoneSecondary}`} className="hover:text-white opacity-70" dir="ltr">{COMPANY_INFO.phoneSecondary}</a>
-                </div>
+                <a href={`tel:${COMPANY_INFO.phonePrimary}`} className="hover:text-white" dir="ltr">{COMPANY_INFO.phonePrimary}</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-brand-gold shrink-0" size={16} />
